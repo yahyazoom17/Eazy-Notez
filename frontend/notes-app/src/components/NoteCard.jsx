@@ -34,6 +34,7 @@ function NoteCard({ title, description, createdTime, bookMark, note }) {
       .catch(function (error) {
         console.log(error);
       });
+    window.location.reload();
   };
 
   const handleDelete = () => {
@@ -46,6 +47,7 @@ function NoteCard({ title, description, createdTime, bookMark, note }) {
       .catch(function (error) {
         console.log(error);
       });
+    window.location.reload();
   };
 
   return (
