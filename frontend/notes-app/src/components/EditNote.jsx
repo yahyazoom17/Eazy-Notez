@@ -52,6 +52,7 @@ function EditNote({ onButtonClick, openParam, note }) {
         console.log(error);
       });
     onButtonClick();
+    window.location.reload();
   };
 
   return (
