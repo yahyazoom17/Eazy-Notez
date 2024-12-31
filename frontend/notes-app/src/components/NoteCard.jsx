@@ -30,11 +30,11 @@ function NoteCard({ title, description, createdTime, bookMark, note }) {
         setIsSaved(true);
         toast(response.data.message);
         console.log(response.data);
+        setTimeout(window.location.reload(), 9000);
       })
       .catch(function (error) {
         console.log(error);
       });
-    window.location.reload();
   };
 
   const handleDelete = () => {
@@ -43,11 +43,11 @@ function NoteCard({ title, description, createdTime, bookMark, note }) {
       .then(function (response) {
         toast(response.data.message);
         console.log(response.data);
+        setTimeout(window.location.reload(), 9000);
       })
       .catch(function (error) {
         console.log(error);
       });
-    window.location.reload();
   };
 
   return (
