@@ -47,7 +47,7 @@ function EditNote({ onButtonClick, openParam, note }) {
       .then(function (response) {
         toast(response.data.message);
         console.log(response);
-        setTimeout(window.location.reload(), 8000);
+        setTimeout(window.location.reload(), 9000);
       })
       .catch(function (error) {
         console.log(error);
