@@ -54,6 +54,7 @@ function AddNote({ onButtonClick, openHandler }) {
         console.log(error);
       });
     onButtonClick();
+    window.location.reload();
   };
 
   return (
